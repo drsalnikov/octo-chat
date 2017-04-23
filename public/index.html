@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Чат</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="menu">
+            <div class="back"><i class="fa fa-chevron-left"></i> <img id="userPic" draggable="false"/></div>
+            <div class="name" id="userName">Аноним</div>
+        </div>
+    <ol id="messageList" class="chat"></ol>
+    <form id="messageForm">
+      <input class="textarea" name="message" type="text" placeholder="Напиши текст сообщения!">
+    </form>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
